@@ -1,10 +1,11 @@
+# Importing the necessary libraries
 import os
 from flask_cors import CORS, cross_origin
-# Import libraries
 import numpy as np
 import json
-from flask import Flask, request, jsonify
 import tensorflow as tf
+from flask import Flask, request, jsonify
+
 app = Flask(__name__)
 # Load the model
 model = tf.keras.models.load_model('my_model', compile=False)
